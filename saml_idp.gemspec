@@ -44,7 +44,6 @@ section of the README.
   INST
 
   s.add_dependency('activesupport', '>= 3.2')
-  s.add_dependency('uuid', '>= 2.3')
   s.add_dependency('builder', '>= 3.0')
   s.add_dependency('nokogiri', '>= 1.6.2')
   s.add_dependency('xmlenc', '>= 0.7.1')
@@ -52,7 +51,7 @@ section of the README.
   s.add_development_dependency('rake')
   s.add_development_dependency('simplecov')
   s.add_development_dependency('rspec', '>= 3.7.0')
-  s.add_development_dependency('ruby-saml', '>= 1.5')
+  s.add_development_dependency('ruby-saml', '>= 1.7.2')
   s.add_development_dependency('rails', '>= 3.2')
   s.add_development_dependency('activeresource', '>= 3.2')
   s.add_development_dependency('capybara', '>= 2.16')
