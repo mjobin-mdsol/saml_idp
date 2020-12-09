@@ -5,7 +5,7 @@ module SamlIdp
     include SamlIdp::Controller
 
     unloadable unless Rails::VERSION::MAJOR >= 4
-    protect_from_forgery
+    #protect_from_forgery
 
     if Rails::VERSION::MAJOR >= 4
       before_action :validate_saml_request, only: [:new, :create, :logout]
