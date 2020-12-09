@@ -86,7 +86,7 @@ module SamlIdp
 
     def valid?
       unless service_provider?
-        log "Unable to find service provider for issuer #{issuer}"
+        log "Unable to find service provider for issuer #{issuer}: #{raw_xml}"
         return false
       end
 

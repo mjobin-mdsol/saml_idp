@@ -35,6 +35,7 @@ module SamlIdp
 
     def validate_saml_request(raw_saml_request = params[:SAMLRequest])
       decode_request(raw_saml_request)
+      Rails.logger.info "SAML IDP: decoded saml request: >#{@saml_request.inspect}<"
       return true if valid_saml_request?
       if defined?(::Rails)
         if Rails::VERSION::MAJOR >= 4
